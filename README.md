@@ -1,1 +1,4 @@
 # drowsiness-detection-in-cars
+
+
+This Python program is a real-time drowsiness detection system that uses a webcam to monitor a person's eyes. It leverages MediaPipe's Face Mesh to detect facial landmarks, especially around the eyes, and calculates the Eye Aspect Ratio (EAR)—a value that helps determine if the eyes are open or closed. If the EAR falls below a certain threshold (0.25) and stays there for more than 2 seconds, it means the person’s eyes are likely closed, indicating drowsiness. In such cases, the system displays warning messages like “DROWSINESS DETECTED” and “Alert!!!! WAKE UP DUDE” on the screen, and also triggers a voice alert using pyttsx3, a text-to-speech engine. The video is processed using OpenCV, and the landmark detection ensures accuracy by tracking specific points around the eyes. This setup is useful in safety-critical environments like driver monitoring systems, where it’s important to detect and alert someone who might be dozing off.
